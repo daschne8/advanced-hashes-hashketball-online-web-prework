@@ -69,7 +69,7 @@ def player_numbers(team)
       team_data[:players].each do |player|
         puts player
         player.each do |player_name,player_stats|
-          puts player_name + " " +player_stats
+          puts player_name
           #numbers << player_stats[:number]
         end
       end
