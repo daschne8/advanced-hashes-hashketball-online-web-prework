@@ -75,5 +75,16 @@ def player_numbers(team)
 end
 
 def player_stats(player)
-
+  stats = {}
+  game_hash.each do |team_location,team_data|
+    team_data.each do |key,value|
+      if key == :players
+        value.each do |pot_player,stats|
+          if pot_player == player
+            return stats
+          end
+        end
+      end
+    end
+  end
 end
