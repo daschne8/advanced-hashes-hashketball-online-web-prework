@@ -74,5 +74,5 @@ def player_numbers(team)
   end
   return numbers
 end
-puts game_hash[:home][:players]["Alan Anderson"][:points]
-#puts player_numbers("Brooklyn Nets")
+# puts game_hash[:home][:players]["Alan Anderson"][:points]
+puts player_numbers("Brooklyn Nets")
