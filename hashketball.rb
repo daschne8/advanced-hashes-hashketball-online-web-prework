@@ -67,7 +67,6 @@ def player_numbers(team)
   game_hash.each do |team_location,team_data|
     if team_data[:team_name] == team
       team_data[:players].each do |player|
-        puts player
         player.each do |player_name,player_stats|
           puts player_name
           #numbers << player_stats[:number]
